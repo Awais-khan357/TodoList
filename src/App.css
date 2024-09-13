@@ -1,38 +1,126 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+  background-color: #eeeef4;
+}
+
+.section{
+  border-radius: 20px 20px 0 0;
+}
+
+
+
+.tododesc .text {
+  color: rgb(145, 150, 149);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+
+}
+
+.tododesc{
+  margin-left: 32px;
+}
+
+input[type=button] {
+  width: 120px;
+  height: 60px;
+  display: inline-block;
+  font-weight: 500;
+  color: gray;
+  background-color: white !important;
+  border: none;
+  outline: none;
+}
+hr {
+  margin: 0px !important;
+  color: inherit;
+  border: 0;
+  border-top: 2px solid gray !important;
+  opacity: 0.09;
+}
+input[type = button].active {
+  border-bottom: 2px solid blue;
+}
+
+.form-check-input{
+  border: 2px solid rgb(205, 223, 221) !important;
+}
+.tododesc .text{
+  color: rgb(145, 150, 149);
+}
+.dates{
+  display: block;
+  gap: 12px;
+  color: rgb(172, 177, 177);
+}
+.dates .icon{
+  color: rgb(219, 105, 29);
+  font-size:medium;
+  font-weight: 500;
+}
+
+.task-add{
+  border-radius: 12px;
+}
+
+.form-input{
+  width: 100%;
+  padding: 8px;
+  border: none;
+  font-weight: 500;
+  margin-top: 13px;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+.form-input::placeholder{
+  color: rgb(192, 188, 188);;
+}
+.form-desc::placeholder{
+  color: rgb(192, 188, 188);
+}
+.form-desc{
+  width: 100%;
+  padding: 8px;
+  border: none;
+  color: rgb(145, 150, 150);
+  font-weight: 500;
+}
+
+.date{
+  width: 112px;
+  border-radius: 8px;
+  margin-left: 12px;
+  margin-top: 4px;
+}
+
+.date::placeholder{
+  font-weight: 500;
+  text-align: center;
+}
+
+.btns{
+  border: 1px solid rgb(222, 222, 226) !important;
+  border-radius: 8px !important;
+  padding: 5px 14px 5px 15px;
+  font-weight: 500;
+  background-color: white !important;
+}
+
+.btns1{
+  border: 1px solid rgb(222, 222, 226) !important;
+  border-radius: 8px !important;
+  padding: 5px 14px 5px 15px;
   color: white;
+  background-color: blue;
+  font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todolist{
+  margin-top: 25px;
 }
